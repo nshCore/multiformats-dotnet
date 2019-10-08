@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../Common.Packable.props" />
+    <Import Project="../../Common.Projects.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>TheDotNetLeague.MultiFormats.MultiCodecs</RootNamespace>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyName>TheDotNetLeague.MultiFormats.MultiCodecs</AssemblyName>
+        <AssemblyOriginatorKeyFile>TheDotNetLeague.MultiFormats.MultiCodecs.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Version)' == '' ">
+        <VersionPrefix Condition=" '$(VersionPrefix)' == '' ">0.0.1</VersionPrefix>
+        <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionPrefix).$(VersionSuffix)</Version>
+        <Version Condition=" '$(Version)' == '' ">$(VersionSuffix)</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>TheDotNetLeague.MultiFormats.MultiCodecs</PackageId>
+        <Title>MultiFormats MultiCodecs</Title>
+        <Description>
+            MultiCodecs implementation in dotnet
+        </Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.9.1" />
+    </ItemGroup>
+
+</Project>

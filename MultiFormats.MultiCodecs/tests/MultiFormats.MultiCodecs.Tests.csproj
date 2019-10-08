@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../Common.TestProjects.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>TheDotNetLeague.MultiFormats.MultiCodecs.Tests</RootNamespace>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyName>TheDotNetLeague.MultiFormats.MultiCodecs.Tests</AssemblyName>
+        <AssemblyOriginatorKeyFile>TheDotNetLeague.MultiFormats.MultiCodecs.Tests.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\MultiFormats.MultiBase\src\MultiFormats.MultiBase.csproj" />
+        <ProjectReference Include="..\src\MultiFormats.MultiCodecs.csproj" />
+    </ItemGroup>
+
+</Project>

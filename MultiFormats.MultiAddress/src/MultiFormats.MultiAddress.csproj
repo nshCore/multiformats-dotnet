@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../Common.Packable.props" />
+    <Import Project="../../Common.Projects.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>TheDotNetLeague.MultiFormats.MultiAddress</RootNamespace>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyName>TheDotNetLeague.MultiFormats.MultiAddress</AssemblyName>
+        <AssemblyOriginatorKeyFile>TheDotNetLeague.MultiFormats.MultiAddress.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Version)' == '' ">
+        <VersionPrefix Condition=" '$(VersionPrefix)' == '' ">0.0.2</VersionPrefix>
+        <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionPrefix).$(VersionSuffix)</Version>
+        <Version Condition=" '$(Version)' == '' ">$(VersionSuffix)</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>TheDotNetLeague.MultiFormats.MultiAddress</PackageId>
+        <Title>MultiFormats MultiAddress</Title>
+        <Description>
+            MultiAddress implementation in dotnet
+        </Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="SimpleBase" Version="1.3.1" />
+        <PackageReference Include="Portable.BouncyCastle" Version="1.8.5" />
+        <PackageReference Include="TheDotNetLeague.MultiFormats.MultiHash" Version="0.0.2" />
+    </ItemGroup>
+</Project>

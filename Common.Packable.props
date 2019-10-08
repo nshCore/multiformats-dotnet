@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup>
+        <IsTestProject>false</IsTestProject>
+        <IsPackable>true</IsPackable>
+        <Authors>TheDotNetLeague</Authors>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>https://github.com/TheDotNetLeague/MultiFormats-dotnet/releases</PackageReleaseNotes>
+        <PackageTags>MultiFormats MultiAddress</PackageTags>
+        <PackageProjectUrl>https://github.com/TheDotNetLeague/MultiFormats-dotnet</PackageProjectUrl>
+        <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+</Project>

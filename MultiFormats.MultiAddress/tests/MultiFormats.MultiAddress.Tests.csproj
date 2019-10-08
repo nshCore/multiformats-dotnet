@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../Common.TestProjects.props" />
+    
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>TheDotNetLeague.MultiFormats.MultiAddress.Tests</RootNamespace>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyName>TheDotNetLeague.MultiFormats.MultiAddress.Tests</AssemblyName>
+        <AssemblyOriginatorKeyFile>TheDotNetLeague.MultiFormats.MultiAddress.Tests.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\src\MultiFormats.MultiAddress.csproj" />
+    </ItemGroup>
+
+</Project>

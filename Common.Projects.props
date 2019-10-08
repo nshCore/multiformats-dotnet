@@ -1,0 +1,27 @@
+<Project>
+    <PropertyGroup>
+        <Company>The Dotnet League</Company>
+        <Copyright>Copyright © 2019 The Dotnet League</Copyright>
+        <PackageIconUrl>https://github.com/organizations/thedotnetleague/settings/profile</PackageIconUrl>
+        <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/thedotnetleague/multiformats-dotnet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RuntimeFrameworkVersion>3.0.0</RuntimeFrameworkVersion>
+        <LangVersion>7.3</LangVersion>
+        <Deterministic>true</Deterministic>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>Full</DebugType>
+        <DebugSymbols>True</DebugSymbols>
+        <Optimize>False</Optimize>
+<!--        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
+        <IncludeSymbols>True</IncludeSymbols>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>False</DebugSymbols>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="$(MSBuildThisFileDirectory)../LICENSE" PackagePath="" Pack="true" />
+    </ItemGroup>
+</Project>
